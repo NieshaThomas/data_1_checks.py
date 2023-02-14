@@ -25,5 +25,3 @@ a=list(my_tuple)
 a[2] = 'passed'
 my_tuple = tuple(a)
 print(my_tuple)
-
-
