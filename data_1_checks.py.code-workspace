@@ -5,6 +5,10 @@
 		},
 		{
 			"path": "../../Assets"
+		},
+		{
+			"name": "Assets",
+			"path": "../Assets"
 		}
 	],
 	"settings": {}
