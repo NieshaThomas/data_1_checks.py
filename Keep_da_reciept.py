@@ -1,4 +1,4 @@
-# imports
+
 import csv
 import pandas as pd
 import matplotlib as plt
@@ -25,11 +25,12 @@ ax.pie(sizes, labels=labels)
 
 plt.show()
 
+import csv
+import pandas as pd
 df = pd.read_csv('pay_CASH.csv')
 print(df)
 
-df = pd.read_csv('pay_EBT.csv')
-print(df)
+
 
 import matplotlib.pyplot as plt
 labels = 'CASH', 'EBT'
