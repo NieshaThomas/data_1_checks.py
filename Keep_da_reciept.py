@@ -153,8 +153,7 @@ print(Wal_total)
 
 
 Item_names = ['FOOD', 'HOUSE HOLD', 'Apperal']
-Items_counts = [1345.71
-, 343.49, 277.00]
+Items_counts = [1345.71, 343.49, 277.00]
 
 fig, ax = plt.subplots()
 bar_container = ax.bar(Item_names, Items_counts)
