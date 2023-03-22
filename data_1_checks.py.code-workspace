@@ -4,6 +4,20 @@
 			"path": "."
 		},
 		{
+			"path": "../../Assets"
+		},
+		{
+			"name": "Assets",
+			"path": "../Assets"
+		}
+	],
+	"settings": {}
+}{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
 			"name": "Keep_da_reciept.py",
 			"path": "../../../../.vscode/data_1_checks.py/Keep_da_reciept.py"
 		}
