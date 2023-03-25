@@ -11,7 +11,7 @@ import pandas as pd
 data = pd.read_csv(r'C:\Users\shede\OneDrive\Desktop\git\data_1_checks.py\ASSETS\FAMILY FINANCES SINCE 0801222.csv')
 data[data.columns[3]] = data[data.columns[3]].replace('[\$,]', '', regex=True).astype(float)
 total = sum(data['AMOUNTS PAID'])
-print(total)
+print("data Spend: ", total)
 
 # food city total and first five line
 import pandas as pd
@@ -24,7 +24,7 @@ data[data.columns[3]] = data[data.columns[3]].replace('[\$,]', '', regex=True).a
 FOODCITY_data = data.loc[(data['STORE NAME'] == 'FOOD CITY')]
 FOODCITY_total = sum(FOODCITY_data['AMOUNTS PAID'])
 print(data.head)
-print(FOODCITY_total)
+print("FOOD CITY Spend: ", FOODCITY_total)
 
 # dollar general total and first five lines
 import pandas as pd
@@ -37,7 +37,7 @@ data[data.columns[3]] = data[data.columns[3]].replace('[\$,]', '', regex=True).a
 DOLLARGeneral_data = data.loc[(data['STORE NAME'] == 'DOLLAR General')]
 DOLLARGeneral_total = sum(DOLLARGeneral_data['AMOUNTS PAID'])
 print(data.head()) 
-print(DOLLARGeneral_total)
+print("DOLLAR General Spend: ", DOLLARGeneral_total)
 
 
 
@@ -52,7 +52,7 @@ data[data.columns[3]] = data[data.columns[3]].replace('[\$,]', '', regex=True).a
 HIBBETTS_data = data.loc[(data['STORE NAME'] == 'HIBBETTS')]
 HIBBETTS_total = sum(HIBBETTS_data['AMOUNTS PAID'])
 print(data.head()) 
-print(HIBBETTS_total)
+print("HIBBETTS Spend: ", HIBBETTS_total)
 
 # money gram total and first 5 lines
 
@@ -66,7 +66,7 @@ data[data.columns[3]] = data[data.columns[3]].replace('[\$,]', '', regex=True).a
 MONEY_GRAM_data = data.loc[(data['STORE NAME'] == 'MONEY GRAM')]
 MONEYGRAM_total = sum(MONEY_GRAM_data['AMOUNTS PAID'])
 print(data.head()) 
-print(MONEYGRAM_total)
+print("MONEY GRAM Spend: ", MONEYGRAM_total)
 
 
 
@@ -112,7 +112,7 @@ EBT_total = sum(EBT_Pay['AMOUNTS PAID'])
 
 print(EBT_Pay.head())
 
-print(EBT_total)
+print("EBT Spend: ", EBT_total)
 
 #cash payment method total and first five lines
 
@@ -131,7 +131,7 @@ CASH_total = sum(CASH_Pay['AMOUNTS PAID'])
 
 print(CASH_Pay.head())
 
-print(CASH_total)
+print("CASH Spend: ", CASH_total)
 
 
 import matplotlib.pyplot as plt
@@ -148,7 +148,7 @@ plt.show()
 data[data.columns[3]] = data[data.columns[3]].replace('[\$,]', '', regex=True).astype(float)
 walmart_data = data.loc[(data['STORE NAME'] == 'WALMART')]
 Wal_total = sum(walmart_data['AMOUNTS PAID'])
-print(Wal_total)
+print("WALMART Spend: ", Wal_total)
 
 
 
@@ -158,7 +158,7 @@ Items_counts = [1345.71, 343.49, 277.00]
 fig, ax = plt.subplots()
 bar_container = ax.bar(Item_names, Items_counts)
 ax.set(ylabel='Money Spent', title='Walmart Sales', ylim=(0, 2000))
-ax.bar_label(bar_container, fmt='{:,.0f}')
+ax.bar_label(bar_container)
 
 plt.show()
 
